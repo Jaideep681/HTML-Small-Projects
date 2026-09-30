@@ -1,0 +1,120 @@
+body{
+    background-color: #70837d/*linear-gradient(red,orange,yellow,white)*/;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: red;
+}
+.ul{
+    margin: 0px;
+    padding: 10px;
+    position: relative;
+}
+.li{
+    display: inline-block;
+    margin: 0px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.li a{
+    text-decoration: none;
+    color: white;
+}
+.li a:hover{
+    color: greenyellow;
+    transition: 1s;
+    padding-right: 10px;
+}
+.login{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: -25px;
+}
+.signin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 48%;
+    border-color: blue;
+    text-decoration: none;
+}
+.signin a{
+    text-decoration: none;
+    color: #000;
+}
+.signup{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 48%;
+    border-color: blue;
+}
+.signup a{
+    text-decoration: none;
+    color: #000;
+}
+.signin:hover{
+    background-color: skyblue;
+    color: red;
+    transition: 0.7s;
+}
+.signup:hover{
+    background-color: skyblue;
+    color: red;
+    transition: 0.7s;
+}
+.courses{
+    margin: 0;
+    padding: 10px;
+    background-color: skyblue;
+    display: block;
+    position: absolute;
+    padding: 0.5cm;
+    padding-left: 0.67cm;
+}
+.dropdown1{
+    margin: 0;
+}
+.down1{
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    padding-top: 20px;
+}
+h3 a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 20px;
+}
+.img{
+    text-align: end;
+    padding-top: 417px;
+}
+.img a{
+    text-decoration: none;
+    color: red;
+}
+.searchbox{
+    text-align: right;
+    padding-top: 10px;
+}
+.search{
+    border-radius: 40%;
+    background-color: aquamarine;
+    padding: 10px;
+    padding-right: 90px;
+    border: 2px dotted #000;
+}
+.go{
+    font-size: 18px;
+}
+.go:hover{
+    color: red;
+    background-color: yellowgreen;
+    font-size: 19px;
+    transition: 0.5s;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clickable Navbar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        details{
+            width: 150px;
+            height: 184px;
+            outline: 2px solid #000;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+        /*-webkit-media-controls-enclosure { display: none !important; }           Uses to disappear the video enclosure in video inline css*/
+        details:not([open]){
+            width: 95px;
+        }
+        summary{
+            background: #dadada;
+            font-size: x-large;
+            text-align: right;
+            cursor: pointer;
+        }
+        li{
+            text-align: center;
+            /*width: max-content;*/
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        li:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <details>
+        <summary>&#9776;</summary>
+        <ul>
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+    </details>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My calculator</title>
+    <link rel="website icon" href="https://atlas-content-cdn.pixelsquid.com/stock-images/icon-calculator-blue-AvYP02E-600.jpg" type="jpg">
+    <style>
+        table{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        h1{
+            text-align:center;
+            color:olive;
+        }
+        input[type="button"]{
+            text-align:center;
+            width:100%;
+            height:100%;
+            background-color:aqua;
+        }
+        #a{
+            background-color:lightblue;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <script src="JS FILE/mycalc.js"></script>
+    <h1>My own calculator</h1>
+    <table>
+        <tr>
+            <th colspan="3"><input type="text" id="a"></th>
+            <th><input type="button" value="C" onclick="clr()"></th>
+            <th><input type="button" value="⌫" onclick="backspc()"></th>
+            <th><input type="button" value="Square" onclick="square()"></th>
+            <th><input type="button" value="Squareroot" onclick="squareroot()"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="7" onclick="pick(7)"></th>
+            <th><input type="button" value="8" onclick="pick(8)"></th>
+            <th><input type="button" value="9" onclick="pick(9)"></th>
+            <th><input type="button" value="+" onclick="pick('+')"></th>
+            <th><input type="button" value="Cube" onclick="cube()"></th>
+            <th><input type="button" value="Cuberoot" onclick="cuberoot()"></th>
+            <th><input type="button" value="Fracpower" onclick="pick('**(1/')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="4" onclick="pick(4)"></th>
+            <th><input type="button" value="5" onclick="pick(5)"></th>
+            <th><input type="button" value="6" onclick="pick(6)"></th>
+            <th><input type="button" value="-" onclick="pick('-')"></th>
+            <th><input type="button" value="π" onclick="pick('*3.14159265359')"></th>
+            <th><input type="button" value="sin^(-1)" onclick="sinh()"></th>
+            <th><input type="button" value="1/x" onclick="pick('1/')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="1" onclick="pick(1)"></th>
+            <th><input type="button" value="2" onclick="pick(2)"></th>
+            <th><input type="button" value="3" onclick="pick(3)"></th>
+            <th><input type="button" value="/" onclick="pick('/')"></th>
+            <th><input type="button" value="e" onclick="pick('*2.718281828459')"></th>
+            <th><input type="button" value="cos^(-1)" onclick="cosh()"></th>
+            <th><input type="button" value="|x|" onclick="modulus()"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="(" onclick="pick('(')"></th>
+            <th><input type="button" value="0" onclick="pick(0)"></th>
+            <th><input type="button" value=")" onclick="pick(')')"></th>
+            <th><input type="button" value="%" onclick="pick('/100')"></th>
+            <th><input type="button" value="ln" onclick="ln()"></th>
+            <th><input type="button" value="tan^(-1)" onclick="tanh()"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="." onclick="pick('.')"></th>
+            <th><input type="button" value="00" onclick="pick('00')"></th>
+            <th><input type="button" value="*" onclick="pick('*')"></th>
+            <th><input type="button" value="=" onclick="solve()"></th>
+            <th><input type="button" value="log" onclick="log()"></th>
+            <th><input type="button" value="x!" onclick="factorial()"></th>
+        </tr>
+    </table>
+    <h1>Convert decimal to hexadecimal number</h1> <label>Enter Decimal number:</label> 
+  <input type="decimal" id="b" placeholder="123456"> 
+  <br><button onclick="dectohex()">Convert</button> 
+  <p id="dectohex"></p> 
+  <h1>Convert decimal to octal number</h1> <label>Enter decimal number:</label> 
+  <input type="decimal" id="c" placeholder="135790"> 
+  <br><button onclick="dectooct()">Convert</button> 
+  <p id="dectooct"></p> 
+  <h1>Convert decimal to binary number</h1> <label>Enter Decimal number:</label> 
+  <input type="decimal" id="d" placeholder="246810"> 
+  <br><button onclick="dectobin()">Convert</button> 
+  <p id="dectobin"></p> 
+  <h1>Convert hexadecimal to decimal number</h1> <label>Enter Hexadecimal number:</label> 
+  <input type="text" id="e" placeholder="29DEF"> 
+  <br><button onclick="hextodec()">Convert</button> 
+  <p id="hextodec"></p> 
+  <h1>Convert hexadecimal to octal number</h1> <label>Enter Hexadecimal number:</label> 
+  <input type="text" id="f" placeholder="47ABC"> 
+  <br><button onclick="hextooct()">Convert</button> 
+  <p id="hextooct"></p> 
+  <h1>Convert hexadecimal to binary number</h1> <label>Enter Hexadecimal number:</label> 
+  <input type="text" id="g" placeholder="63ACE"> 
+  <br><button onclick="hextobin()">Convert</button> 
+  <p id="hextobin"></p> 
+  <h1>Convert octal to decimal number</h1> <label>Enter Octal number:</label> 
+  <input type="number" id="h" placeholder="173675"> 
+  <br><button onclick="octtodec()">Convert</button> 
+  <p id="octtodec"></p> 
+  <h1>Convert octal to hexadecimal number</h1> <label>Enter Octal number:</label> 
+  <input type="number" id="i" placeholder="162375"> 
+  <br><button onclick="octtohex()">Convert</button> 
+  <p id="octtohex"></p> 
+  <h1>Convert octal to binary number</h1> <label>Enter Octal number:</label> 
+  <input type="number" id="j" placeholder="157634"> 
+  <br><button onclick="octtobin()">Convert</button> 
+  <p id="octtobin"></p> 
+  <h1>Convert binary to decimal number</h1> <label>Enter Binary number:</label> 
+  <input type="number" id="k" placeholder="1101101"> 
+  <br><button onclick="bintodec()">Convert</button> 
+  <p id="bintodec"></p> 
+  <h1>Convert binary to octal number</h1> <label>Enter Binary number:</label> 
+  <input type="number" id="l" placeholder="1001010"> 
+  <br><button onclick="bintooct()">Convert</button> 
+  <p id="bintooct"></p>
+  <h1>Convert binary to hexadecimal number</h1> <label>Enter Binary number:</label> 
+  <input type="number" id="m" placeholder="1111001"> 
+  <br><button onclick="bintohex()">Convert</button> 
+  <p id="bintohex"></p>
+</body>
+</html>

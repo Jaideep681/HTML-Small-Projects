@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Style text animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #f00, #ff0, #0f0);
+        }
+
+        h1 {
+            padding-left: 75px;
+            font-size: 40px;
+        }
+
+        h1 span {
+            position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+            padding-left: 3.5px;
+            height: 45px;
+            color: aqua;
+            overflow: hidden;
+        }
+
+        h1 span span {
+            display: block;
+            animation: animate 6s ease infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0%);
+            }
+            20% {
+                transform: translateY(-100%);
+            }
+            40% {
+                transform: translateY(-200%);
+            }
+            60% {
+                transform: translateY(-300%);
+            }
+            80% {
+                transform: translateY(-400%);
+            }
+            100% {
+                transform: translateY(-500%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learn Web development
+        <span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>PYTHON</span>
+            <span>SQL</span>
+            <span>Mongo DB</span>
+        </span>
+    </h1>
+</body>
+
+</html>

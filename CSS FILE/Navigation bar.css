@@ -1,0 +1,94 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.navbar .ul{
+    background-color:black;
+    margin:0px;
+    padding:0px;
+}
+.li a{
+    text-decoration:none;
+    color:white;
+}
+.li{
+    list-style-type:none;
+    display:inline-block;
+    margin:30px;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+.li a:hover{
+    color:red;
+    padding-left:5px;
+    transition:1s;
+}
+.course{display:none;}
+.ul .li:hover .course{
+    display:block;
+    position:absolute;
+    margin-top:0.53cm;
+    margin-left:-0.4cm;
+}
+.ul .li .course:hover{
+    transition:1s;
+}
+.dropdown{
+    list-style:none;
+    background-color:black;
+}
+.branch{
+    display:block;
+    color:white;
+    margin:0px;
+    padding:13px;
+    padding-right:50px;
+}
+.branch:hover{
+    background-color:aqua;
+    color:red;
+    transition:1s;
+}
+.btech{display:none;}
+.branch:hover .btech{
+    margin-left:95.5px;
+    margin-top:-30.9px;
+    position: absolute;
+    display:block;
+}
+.dropdown2{
+    background-color:black;
+}
+.branch2{
+    list-style-type:none;
+    color:white;
+    margin:0px;
+    padding:10px;
+    padding-right:50px;
+    position:relative;            
+}
+.branch2:hover{
+    background-color:lightcoral;
+    color:olive;
+    transition:0.5s;
+}
+.inputbox{
+    float:right;
+    margin:18px;
+    padding:0px;
+}
+.search{
+    border-radius:25px;
+    padding:10px;
+    padding-right:50px;
+}
+button{
+    background-color:#fff;
+    font-size:19px;
+    padding:5px;
+}
+button:hover{
+    background-color:#ccc;
+    font-size:20px;
+    transition:0.3s;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Most important</title>
+    <style>
+        body:has(.a:checked) {
+            background-color: #333;
+        }
+
+        input[type="text"]:invalid+input[type="password"]:invalid {
+            animation: shake 300ms;
+        }
+
+
+        @keyframes shake {
+            25%,
+            75% {
+                transform: translateX(4px);
+            }
+            50% {
+                transform: translateX(-4px);
+            }
+            0%,
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <ins>Note</ins>:-Please enter your name in small letters.
+    </p>
+    <input type="text" pattern="^[a-zA-Z0-9_]{3,16}$" placeholder="Enter your username" title="3-16 characters, letters/numbers/underscores only">
+    <br>
+    <br>
+    <input type="text" placeholder="Enter your phone number upto 10 digits" pattern="\d{10}" required>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter your phone number 5-10 digits" pattern="\d{5,10}" required>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter only numbers" title="Only numbers" pattern="\d" required>
+    <br>
+    <!--Whenever it hovers it displays a title-->
+    <br>
+    <!--Email format (basic)-->
+    <input type="mail" placeholder="Enter your valid E-mail" title="Valid E-mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+    <br>
+    <br>
+    <!--Password (strong: 1 uppercase, 1 lowercase, 1 number, 1 special char, min 8)-->
+    <input type="password" placeholder="Enter your valid password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+        title="Must contain at least 8 characters, including uppercase, lowercase, number, and special character" required>
+    <br>
+    <br>
+    <!--Password (min 8 chars, at least 1 letter & 1 number)-->
+    <input type="password" placeholder="Enter your valid password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Must contain at least 8 characters, 1 letter and 1 number">
+    <br>
+    <br>
+    <!--Website URL-->
+    <input type="text" placeholder="Enter your valid URL" pattern="https?://.+" title="Must start with http:// or https://">
+    <br>
+    <br>
+    <!--Date (YYYY-MM-DD format)-->
+    <input type="text" placeholder="Enter your valid Date" pattern="\d{4}-\d{2}-\d{2}" title="Date format: YYYY-MM-DD">
+    <br>
+    <br>
+    <input type="checkbox" class="a">
+    <br>
+    <br>
+    <button>
+        <a href="AMAZON CLONE.docx" download>Download</a>
+    </button>
+</body>
+
+</html>

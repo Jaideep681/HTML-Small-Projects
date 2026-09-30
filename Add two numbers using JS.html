@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add two numbers using JS</title>
+</head>
+
+<body>
+    <h1>Add two numbers</h1>
+    <script>
+        let a=alert("This is an addition program");
+        console.log(a);
+        function add(){
+            const a=parseFloat(document.getElementById("first").value);
+            const b=parseFloat(document.getElementById("second").value);
+            if(isNaN(a)||isNaN(b)){
+                let c=alert("Please fill the blank correctly");
+                console.log(c);
+            }
+            document.getElementById("result").innerHTML="Addition of "+a+" & "+b+" is " +(a+b);
+        }
+    </script>
+    <div class="add">
+        <span>First Number: </span>
+        <input type="number" id="first" /><br><br>
+        <span>Second Number: </span>
+        <input type="number" id="second" />
+        <button type="button" onclick="add()">Add</button>
+        <h2>Result:</h2>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

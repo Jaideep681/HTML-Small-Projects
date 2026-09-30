@@ -1,0 +1,143 @@
+.searchbar select{
+    width: 60px;
+    height: 45px; 
+    border-radius: 10%;
+}
+.header3 #totaldeal{
+    font-weight: bold;
+}
+.header3{
+    font-size: 13px;
+    list-style-type: none;
+}
+.header3 li{
+    display: inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+    cursor: pointer;
+}
+.header3 li:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.hr2{
+    opacity: 0.4;
+}
+marquee{
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    pointer-events: none;
+}
+.div ul li{
+    font-size: 18px;
+    font-family: "arial",sans-serif;
+    display: inline-block;
+    border: 0.5px solid rgb(172, 167, 167);
+    padding: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.div ul li:hover{
+    border-color:  rgb(73, 71, 71);
+    background-color: #999;
+}
+.div ul li:active{
+    box-shadow: 3px 5px 0 rgb(196, 196, 17);
+    background-color: #555;
+}
+#b{
+    font-size: 25px;
+    border: 0.5px solid rgb(172, 167, 167);
+    scale: 1.1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.scroll div a:hover{
+    text-decoration: underline;
+}
+.scroll div{ 
+    cursor: pointer;
+    margin: 20px;
+}
+.scroll div pre input[type="range"]{
+    position: relative;
+}
+.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 500px;
+    float: left;
+    overflow-y: scroll;
+}
+.products{
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 30px;
+    width: calc(400%/5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-block: -10px;
+    padding-inline: -10px;
+    gap: 7px;
+}
+.products #image{
+    padding: 15px;
+}
+.products #image img{
+    width: 175px;
+    height: 250px;
+    cursor: pointer;
+}
+.products #image img:hover{
+    scale: 1.15;
+    border: 1px solid #333;
+    transition: 0.4s;
+}
+.products #image p{
+    cursor: pointer;
+    text-align: center;
+}
+.products #image p:hover{
+    scale: 1.3;
+    color: violet;
+    transition: 0.4s;
+}
+.forfull ul{
+    list-style-type: none;
+}
+.forfull ul li{
+    display: inline-block;
+}
+.forfull ul li img{
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+.forfull ul li img:active{
+    scale: 1.1;
+}
+.arrow{
+    margin: 0;
+}
+.forfull ul li .c{
+    font-size: 25px;
+    border: 0.5px solid rgb(172, 167, 167);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    scale: 1.2;
+}
+.forfull ul li .c:hover{
+    background: #999;
+}
+.forfull ul li .c:active{
+    border: 1px solid #111;
+}
+.signinbuttoncenter{
+    margin-top: 0px; 
+    border: 1px solid lightgrey;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input focus with popover</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc;
+            height: 100vh;
+        }
+
+        .div2 {
+            border: 1px solid #000;
+        }
+
+        .div2 h1 {
+            margin-inline: 100px;
+            margin-block: 50px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .div2 button {
+            margin: 20px; 
+            margin-left: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <button type="button" popovertarget="modal" popovertargetaction="show">
+            Open
+        </button>
+        <div class="div2" id="modal" popover>
+            <h1>Hello, everyone</h1>
+            <p>This is my first popover button program</p>
+            <button type="button" popovertarget="modal" popovertargetaction="hide">
+                Close
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrollbar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+
+        h1 {
+            padding-bottom: 5px;
+            display: grid;
+            place-items: center;
+            color: #f00;
+            position: relative;
+            border-bottom: 3px dashed #0f0;
+        }
+
+        h1::after {
+            content: "";
+            background-color: #0f0;
+            position: absolute;
+            height: 7px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .scrollbar {
+            background-color: whitesmoke;
+            text-align: justify;
+            padding: 15px;
+            width: 400px;
+            height: 400px;
+            overflow: auto;
+            box-shadow: 0 0 20px #000;
+            border-radius: 12px;
+        }
+
+        .scrollbar::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .scrollbar::-webkit-scrollbar-thumb {
+            background: linear-gradient(#ff0, #0ff, #0f0);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scrollbar">
+        <h1>Essay: Picnic</h1>
+        <p>
+            Last winter holidays, my family decided to visit the botanical garden in our city. My parents, sister, grandparents, and
+            I left early in the morning carrying a basket filled with freshly prepared food, juice, and snacks. As we entered
+            the garden, we were enchanted by the beautiful flowers, green grass, and chirping birds. Grandfather showed us
+            rare plants, while grandmother pointed out different types of butterflies. My sister and I loved running on the
+            soft grass and playing with a ball. Later, we played musical chairs with our parents. Around noon, we laid out
+            our lunch on a colorful mat. The food tasted heavenly, and we shared jokes and laughter. After resting, dad organized
+            a treasure hunt for us—my favorite part of the day. We clicked family photos to remember these special moments.
+            The fresh air and lovely surroundings made us forget all worries. By sunset, we felt relaxed and happy. On our
+            way home, we talked about our favorite activities and lessons learnt from nature. Family picnics let us bond,
+            talk, and make lasting memories away from screens. They also remind us to respect and care for our environment.
+            I hope to organize more picnics with my family, as they make me feel loved and joyful every single time. Last
+            winter holidays, my family decided to visit the botanical garden in our city. My parents, sister, grandparents,
+            and I left early in the morning carrying a basket filled with freshly prepared food, juice, and snacks. As we
+            entered the garden, we were enchanted by the beautiful flowers, green grass, and chirping birds. Grandfather
+            showed us rare plants, while grandmother pointed out different types of butterflies. My sister and I loved running
+            on the soft grass and playing with a ball. Later, we played musical chairs with our parents. Around noon, we
+            laid out our lunch on a colorful mat. The food tasted heavenly, and we shared jokes and laughter. After resting,
+            dad organized a treasure hunt for us—my favorite part of the day. We clicked family photos to remember these
+            special moments. The fresh air and lovely surroundings made us forget all worries. By sunset, we felt relaxed
+            and happy. On our way home, we talked about our favorite activities and lessons learnt from nature. Family picnics
+            let us bond, talk, and make lasting memories away from screens. They also remind us to respect and care for our
+            environment. I hope to organize more picnics with my family, as they make me feel loved and joyful every single
+            time.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hovering Navbar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        .one{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            padding: 15px;
+            display: block;
+            background-color: #fff;
+            font-size: 20px;
+            box-shadow: 0 0 12px #ccc;
+            border-radius: 25px;
+        }
+
+        #button {
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+            padding: 19px;
+            border-radius: 50%;
+        }
+
+        #sidebar {
+            display: none;
+            margin: 0;
+            padding: 0;
+            width: 120px;
+            height: 150px;
+            background: tomato;
+            border-radius: 20px;
+            margin-left: 20px;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #sidebar.open {
+            display: block;
+        }
+
+        #sidebar li {
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        #sidebar li:hover {
+            transition: all 0.8s ease;
+            background-color: #0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <p>
+            Navbar
+            <button id="button">&#9776;</button>
+        </p>
+    </div>
+    <ul id="sidebar" draggable="true">
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+    </ul>
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:97.5vh;
+    background:linear-gradient(black,blue,yellow,green);
+}
+.container{
+    background-color:lightgrey;
+    padding:15px;
+    margin-top:75px;
+    border-radius:10px;
+    width:60%;
+}
+.registration{
+    font-family:algerian;
+    text-align:center;
+    border-bottom:3px dashed red;
+}
+.container2{
+    display:flex;
+    flex-wrap:wrap;
+}
+.inputbox{
+    width:calc(100%/2 - 20px);
+    margin:10px;
+}
+input{
+    height:45px;
+    width:100%;
+}
+.submit{
+    font-size:25px;
+    width:100%;
+    text-align:center;
+    background-color:blue;
+    color:white;
+}
+.submit a{
+    text-decoration: none;
+    color: #f0f0f0;
+}

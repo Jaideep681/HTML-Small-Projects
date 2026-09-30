@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Even/Odd & Leap/Non-Leap using JS</title>
+    <style>
+        body {
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function even() {
+            let a = parseInt(document.getElementById("num1").value);
+            if (a % 2 == 0) {
+                //document.write("It is an even number");
+                document.getElementById("even").innerHTML = "Even Number";
+            }
+            else {
+                //document.write("It is a odd number");
+                document.getElementById("even").innerHTML = "Odd Number";
+            }
+            if (isNaN(a)) {
+                alert("Please fill the blank");
+            }
+        }
+        function leap() {
+            let b = parseInt(document.getElementById("num2").value);
+            if (b % 4 == 0) {
+                //document.write("It is a leap year");
+                document.getElementById("leap").innerHTML = "Leap Year";
+            }
+            else {
+                //document.write("It is not a leap year");
+                document.getElementById("leap").innerHTML = "Non-Leap Year";
+            }
+            if (isNaN(b)) {
+                alert("Please fill the blank");
+            }
+        }
+    </script>
+    <h1>Enter number: </h1>
+    <input type="number" id="num1" placeholder="Enter Number" />
+    <button type="button" onclick="even()">Check Even/Odd number</button>
+    <h2>Your number is--></h2>
+    <p id="even"></p>
+    <br>
+    <h1>Enter year: </h1>
+    <input type="number" id="num2" placeholder="Enter Year" />
+    <button type="button" onclick="leap()">Check leap/non-leap year</button>
+    <h2>Your year is--></h2>
+    <p id="leap"></p>
+    <br>
+</body>

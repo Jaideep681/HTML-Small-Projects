@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+body.dark{
+    background-color: #111;
+}
+.nav1{
+    background-color: black;
+}
+.nav1 .ul1{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 75px;
+}
+.img1{
+    width: 150px;
+    height: 70px;
+}
+.setimage:hover{
+    outline: 2px solid white;
+}
+.border:hover{
+    outline: 2px solid white;
+}
+.setborder:hover{
+    outline: 2px solid white;
+}
+.right{
+    float: right;
+}
+.searchbar{
+    padding-left: 0px;
+}
+.searchbar select{
+    width: 40px;
+    height: 45px; 
+    border-radius: 10%;
+}
+.search{
+    border-radius: 5%;
+    width: 420px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+}
+.searchbutton{
+    width: 40px;
+    height: 43px;
+    background-color: rgb(238, 238, 13);
+}
+.img2{
+    text-align: center;
+    width: 15px;
+    height: 15px;
+}
+.img3{
+    color: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+.bordernone{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.bordernone option{
+    background-color: #fff;
+    color: #000;
+}
+.header1 .nav1 .ul1 li{
+    margin: 0px;
+    padding-right: 20px;
+    color: white;
+    display: inline-block;
+}
+header, footer{
+    width: 1349px;
+}
+.header1{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+/*.dropdown{
+    display: none;
+}
+.border .dropdown{
+    display: block;
+    position: absolute;
+}
+.border .dropdown:hover{
+    transition: 1s;
+}
+.hover{
+    list-style:none;
+    background-color:black;
+}
+.signin{
+    display:block;
+    color:white;
+}
+.hover.signin1 a{
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    border: 0.5px solid black;
+    border-radius: 20%;
+}
+.hover .signin1:hover{
+    
+}*/
+.ul2{
+    margin: 0px;
+    background-color: rgba(4, 39, 138, 0.918);
+    height: 60px;
+}
+.border2:hover{
+    outline: 2px solid white;
+}
+.img6{
+    width: 1349px;
+    height: 500px;
+    opacity: 1;
+}
+.header2 .nav2 .ul2 .border2{
+    margin: 0px;
+    padding: 6px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+}
+#totaldeals a{
+    color: #fff;
+}
+.allimages{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1349px;
+    height: 1349px;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    border: 15px solid;
+    border-color: lightgrey;
+    width: 307.25px;
+    height: 750px;
+}
+.images div{
+    margin: 0;
+    padding: 0;
+}
+.img5{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+small{
+    color: black;
+    font-size: 13.2px;
+}
+pre{
+    color: black;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}
+#signinbutton{
+    width: 225px;
+    height: 30px;
+    background-color: rgb(255, 255, 0);
+    border-radius: 25px;
+    border: none;            /*border: 0;*/
+}
+.signinbuttoncenter{
+    margin-top: 250px; 
+    border: 1px solid lightgrey;
+}
+.backtotop{
+    margin-top: 20px; 
+    padding: 20px;
+    background-color: rgba(10, 10, 248, 0.733);
+    color: white;
+}
+.backtotop:hover{
+    opacity: 0.9;
+    font-style: bold;
+}
+.footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(6, 32, 63, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .footerclass ul li{
+    list-style-type: none;
+    display: block;
+    position: relative;
+    margin: 10px;
+}
+.footer .footerclass ul li a{
+    color: white;
+}
+.footer .footerclass ul li a:hover{
+    text-decoration: underline;
+}
+.footer .footerclass ul{
+    margin: 0;
+}
+.footer .footerclass{
+    width: calc(100%/4);
+}
+.copyright{
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright center{
+    margin: 35px;
+    margin-bottom: 75px;
+}
+.copyright center pre a{
+    color: rgb(23, 89, 211);
+}

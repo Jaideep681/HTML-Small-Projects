@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Limit range</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+            background: #ccc;
+        }
+
+        progress {
+            margin-left: -175px;
+            margin-bottom: -20px;
+            width: 175px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <textarea maxlength="20"></textarea>
+        <progress max="20" value="0"></progress>
+    </div>
+    <script>
+        let textarea = document.querySelector("textarea");
+        let progress = document.querySelector("progress");
+        textarea.addEventListener("input", () => {
+            progress.value = textarea.value.trim().length;
+        });
+    </script>
+</body>
+
+</html>

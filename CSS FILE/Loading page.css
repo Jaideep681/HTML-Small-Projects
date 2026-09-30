@@ -1,0 +1,28 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+.load
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  border-top: 5px solid blue;
+  animation: loading 1s ease-in 0s 2;
+}
+@keyframes loading 
+{
+  from
+  {
+    transform: rotate(0);
+  }
+  to
+  {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,46 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(black, red, blue, yellow);
+}
+form{
+  background-color: lightgrey;
+  border-radius: 10%;
+}
+fieldset{
+  border-radius: 15%;
+}
+label{
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  width: 150px;
+  display: inline-block;
+}
+legend{
+  border: double;
+  border-color: red;
+  border-radius: 20%;
+}
+button{
+  color: white;
+  background-color: lightblue;
+  font-size: 20;
+  text-align: center;
+  width: 100%;
+}
+button:hover{
+  font-family: algerian;
+  background-color: blue;
+  text-align: center;
+}
+.submit{
+  width: 100%;
+  margin-top: 10px; 
+}
+input{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

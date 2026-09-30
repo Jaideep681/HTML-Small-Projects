@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Love</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/colorful-love-hearts-wallpaper-free-image.jpg?w=2210&quality=70");
+        }
+        .button,
+        .btn {
+            position: absolute;
+            padding: 10px;
+            font-size: 18px;
+            background-color: aqua;
+            color: blueviolet;
+            cursor: pointer;
+            filter: drop-shadow(0 0 25px #000);
+            border-radius: 20px;
+            border: 0;
+        }
+        h1{
+            padding-left: 20px;
+            color: purple;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            padding-right: 130px;
+        }
+        iframe{
+            margin-left: 20px;
+            width: 220px;
+            height: 193px;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Do you love me?</h1>
+        <iframe src="https://media.tenor.com/6ZuQduEec2wAAAAM/bunny.gif" name="my"></iframe>
+        <ul>
+            <li>
+                <a href="https://media.tenor.com/fOLtZ0bL-GQAAAAM/love-you.gif" target="my"><input type="button" class="button" value="Yes" /></a>
+            </li>
+            <li>
+                <input type="button" class="btn" value="No" />
+            </li>
+        </ul>
+    </div>
+    <script>
+        const button = document.querySelector('.btn');
+        button.addEventListener('mouseover', () => {
+            button.style.left = Math.random() * 90 + 'vw';
+            button.style.top = Math.random() * 90 + 'vh';
+        });
+    </script>
+</body>
+
+</html>

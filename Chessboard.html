@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHESSBOARD</title>
+    <link rel="website icon" href="https://cdn-icons-png.flaticon.com/128/18469/18469503.png" type="image/png">
+    <style>
+        body {
+            margin: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chessboard {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+
+        .chessboard div {
+            width: calc(100%/8);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            animation: spin 5s ease-in 1s 1 alternate;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            33% {
+                transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+            }
+            67% {
+                transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+            }
+        }
+
+        .a {
+            background-color: white;
+            width: 62.5px;
+            height: 62.5px;
+            color: #000;
+        }
+
+        #chesspieces:hover {
+            background-color: rgb(196, 196, 61);
+        }
+
+        .b {
+            background-color: #000;
+            width: 62.5px;
+            height: 62.5px;
+            color: #FFF;
+        }
+
+        #chesspieces:hover {
+            background-color: rgb(196, 196, 61);
+        }
+
+        .in {
+            margin-right: 20px;
+            animation: range 5s ease-in 1s 1;
+        }
+
+        @keyframes range {
+            0% {
+                color: rgb(53, 53, 170);
+            }
+            33% {
+                color: rgb(206, 206, 108);
+            }
+            67% {
+                color: rgb(211, 60, 60);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="in">
+        <h1>Animation</h1>
+    </div>
+    <div class="chessboard">
+        <div class="a" id="chesspieces">&#9814;</div>
+        <div class="b" id="chesspieces">&#9816;</div>
+        <div class="a" id="chesspieces">&#9815;</div>
+        <div class="b" id="chesspieces">&#9813;</div>
+        <div class="a" id="chesspieces">&#9812;</div>
+        <div class="b" id="chesspieces">&#9815;</div>
+        <div class="a" id="chesspieces">&#9816;</div>
+        <div class="b" id="chesspieces">&#9814;</div>
+
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+        <div class="a" id="chesspieces">&#9817;</div>
+        <div class="b" id="chesspieces">&#9817;</div>
+
+        <div class="b" id="chesspieces">&#9814;</div>
+        <div class="a" id="chesspieces">&#9816;</div>
+        <div class="b" id="chesspieces">&#9815;</div>
+        <div class="a" id="chesspieces">&#9813;</div>
+        <div class="b" id="chesspieces">&#9812;</div>
+        <div class="a" id="chesspieces">&#9815;</div>
+        <div class="b" id="chesspieces">&#9816;</div>
+        <div class="a" id="chesspieces">&#9814;</div>
+    </div>
+</body>
+
+</html>

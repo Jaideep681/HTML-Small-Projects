@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bulb on/off</title>
+    <link rel="website icon" href="https://cdn.vectorstock.com/i/1000v/89/54/realistic-light-bulb-on-the-dark-background-vector-1848954.jpg" type="jpg">
+    <style>
+        body{
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        alert("This is a Bulb realistic image page");
+        function bulbon() {
+            let a = document.getElementById("img1").src = "https://cdn.vectorstock.com/i/1000v/89/54/realistic-light-bulb-on-the-dark-background-vector-1848954.jpg";
+            console.log(a);
+        }
+        function bulboff() {
+            let b = document.getElementById("img1").src = "https://cdn2.vectorstock.com/i/1000x1000/44/86/realistic-light-bulb-isolated-on-white-vector-4764486.jpg";
+            console.log(b);
+        }
+    </script>
+    <center>
+        <img id="img1" width="400px" height="400px" src="https://cdn2.vectorstock.com/i/1000x1000/44/86/realistic-light-bulb-isolated-on-white-vector-4764486.jpg"/>
+        <br>
+        <button type="button" onclick="bulbon()">Bulb on</button>
+        <button type="button" onclick="bulboff()">Bulb off</button>
+    </center>
+</body>
+
+</html>

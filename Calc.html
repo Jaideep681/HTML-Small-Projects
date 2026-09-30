@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Calculator</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /*.border {
+  border: 5px double black;
+  border-radius: 20px;
+}*/
+        @media only screen and (min-width: 1000px) {
+            #display {
+                margin: 10px;
+                margin-right: 50px;
+                width: 200px;
+                height: 50px;
+                border: 1px solid rgb(70, 67, 67);
+            }
+            .calc {
+                display: flex;
+                flex-wrap: wrap;
+                width: calc(90%/5);
+            }
+            hr {
+                width: 235px;
+                margin-left: 580px;
+
+            }
+            .calc div input[type="button"] {
+                width: 40.5px;
+                height: 40.5px;
+                margin: 7px;
+                border-radius: 50%;
+                font-size: 16px;
+            }
+        }
+
+        #blue {
+            color: rgb(2, 2, 252);
+            background-color: rgb(163, 159, 159);
+        }
+
+        #blue:hover {
+            background-color: rgb(134, 130, 130);
+        }
+
+        #equalto {
+            background-color: blue;
+            color: white;
+        }
+
+        #equalto:hover {
+            background-color: rgb(44, 44, 219);
+        }
+
+        #buttons {
+            background-color: rgb(163, 159, 159);
+            color: white;
+        }
+
+        #buttons:hover {
+            background-color: rgb(134, 130, 130);
+        }
+
+        @media only screen and (max-width: 800px) {
+            .calc div input[type="button"] {
+                width: 30.5px;
+                height: 30.5px;
+                margin: 7px;
+                border-radius: 50%;
+                font-size: 16px;
+            }
+            .calc {
+                display: flex;
+                flex-wrap: wrap;
+                width: calc(130%/5);
+                background-color: black;
+            }
+            hr {
+                width: 235px;
+                background-color: black;
+            }
+            #display {
+                margin: 0px;
+                margin-left: 5px;
+                width: 200px;
+                height: 50px;
+                border: 1px solid rgb(70, 67, 67);
+                background-color: black;
+                color: white;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            .calc div input[type="button"] {
+                width: 40.5px;
+                height: 40.5px;
+                margin: 5px;
+                border-radius: 50%;
+                font-size: 16px;
+            }
+            .calc {
+                display: flex;
+                flex-wrap: wrap;
+                width: calc(350%/5);
+                background-color: black;
+            }
+            hr {
+                width: 250px;
+                background-color: black;
+            }
+            #display {
+                margin: 0px;
+                margin-left: 5px;
+                width: 225px;
+                height: 50px;
+                border: 1px solid rgb(70, 67, 67);
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function pick(val) {
+            document.getElementById("display").value += val;
+        }
+        function solve() {
+            var x = document.getElementById("display").value;
+            var y = eval(x);
+            document.getElementById("display").value = y;
+        }
+        function clr() {
+            document.getElementById("display").value = " ";
+        }
+        function backspace() {
+            var a = document.getElementById("display").value;
+            var b = a.substr(0, a.length - 1);
+            document.getElementById("display").value = b;
+        }
+        function square() {
+            var a = document.getElementById("display").value;
+            var b = a * a;
+            document.getElementById("display").value = b;
+        }
+    </script>
+    <center>
+        <div class="border">
+            <input type="text" id="display">
+            <hr>
+            <div class="calc">
+                <div>
+                    <input type="button" value="AC" id="blue" onclick="clr()">
+                </div>
+                <div>
+                    <input type="button" value="⌫" id="blue" onclick="backspace()">
+                </div>
+                <div>
+                    <input type="button" value="x²" id="blue" onclick="square()">
+                </div>
+                <div>
+                    <input type="button" value="÷" id="blue" onclick="pick('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" id="buttons" onclick="pick(7)">
+                </div>
+                <div>
+                    <input type="button" value="8" id="buttons" onclick="pick(8)">
+                </div>
+                <div>
+                    <input type="button" value="9" id="buttons" onclick="pick(9)">
+                </div>
+                <div>
+                    <input type="button" value="×" id="blue" onclick="pick('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" id="buttons" onclick="pick(4)">
+                </div>
+                <div>
+                    <input type="button" value="5" id="buttons" onclick="pick(5)">
+                </div>
+                <div>
+                    <input type="button" value="6" id="buttons" onclick="pick(6)">
+                </div>
+                <div>
+                    <input type="button" value="-" id="blue" onclick="pick('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" id="buttons" onclick="pick(1)">
+                </div>
+                <div>
+                    <input type="button" value="2" id="buttons" onclick="pick(2)">
+                </div>
+                <div>
+                    <input type="button" value="3" id="buttons" onclick="pick(3)">
+                </div>
+                <div>
+                    <input type="button" value="+" id="blue" onclick="pick('+')">
+                </div>
+                <div>
+                    <input type="button" value="%" id="buttons" onclick="pick('*0.01')">
+                </div>
+                <div>
+                    <input type="button" value="0" id="buttons" onclick="pick(0)">
+                </div>
+                <div>
+                    <input type="button" value="." id="buttons" onclick="pick('.')">
+                </div>
+                <div>
+                    <input type="button" value="=" id="equalto" onclick="solve()">
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

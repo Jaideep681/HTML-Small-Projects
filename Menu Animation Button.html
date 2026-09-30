@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Animation Button</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        .menu{
+            width: 30px;
+            cursor: pointer;
+        }
+        .menu div{
+            height: 4px;
+            margin: 5px 0;
+            background: #000;
+            transition: all 0.4s ease;
+        }
+        .menu:hover div:nth-child(1){
+            transform: rotate(45deg) translate(5px,5px);
+        }
+        .menu:hover div:nth-child(2){
+            opacity: 0;
+        }
+        .menu:hover div:nth-child(3){
+            transform: rotate(-45deg) translate(7px,-7px);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

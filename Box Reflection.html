@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Reflection</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: #111;
+        }
+
+        .square1 {
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            border: 50px solid red;
+            background-color: #f00;
+            -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+        }
+
+        h1 {
+            font-size: 25px;
+            margin-top: 30px;
+            margin-left: -40px;
+            width: max-content;
+            color: whitesmoke;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square1">
+        <h1> Jaideep Paul </h1>
+    </div>
+</body>
+
+</html>

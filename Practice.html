@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+        }
+
+        header nav .ul1 {
+            margin: 0px;
+            list-style-type: none;
+            background-color: #000;
+            color: #fff;
+            height: 75px;
+        }
+
+        header nav .ul1 .li1 {
+            margin: 25px;
+            display: inline-flex;
+            text-align: center;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        header nav .ul1 .li1:hover {
+            color: red;
+            border: 0.1px solid white;
+            transition: 0.5s;
+        }
+
+        .ul2 {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .down1 {
+            display: none;
+        }
+
+        header nav .ul1 .li1:hover .down1 {
+            display: block;
+            margin-top: 30px;
+            margin-left: -25px;
+            height: 220px;
+            background-color: #000;
+            position: absolute;
+        }
+
+        header nav .ul1 .li1 .down1 .ul2 .li2 {
+            cursor: pointer;
+            color: #fff;
+            margin: 25px;
+            margin-top: 19px;
+            padding: 5px;
+        }
+
+        header nav .ul1 .li1 .down1 .ul2 .li2:hover {
+            color: red;
+            background-color: blue;
+            transition: 0.5s;
+        }
+
+        .ul3 {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .down2 {
+            display: none;
+        }
+
+        header nav .ul1 .li1 .down1 .ul2 .li2:hover .down2 {
+            display: block;
+            position: absolute;
+            background-color: #000;
+            margin-top: -27px;
+            margin-left: 78.3px;
+        }
+
+        .li3 {
+            cursor: pointer;
+            color: #fff;
+            margin: 25px;
+            margin-top: 19px;
+            padding: 5px;
+        }
+
+        .li3:hover {
+            color: red;
+            border: 0.1px solid white;
+            transition: 0.5s;
+        }
+
+        .ul4 {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .down3 {
+            display: none;
+        }
+
+        .ul2 .li2:hover .down3 {
+            display: block;
+            position: absolute;
+            background-color: #000;
+            margin-top: -27px;
+            margin-left: 78.3px;
+        }
+
+        .li4 {
+            cursor: pointer;
+            color: #fff;
+            margin: 25px;
+            margin-top: 19px;
+            padding: 5px;
+        }
+
+        .li4:hover {
+            color: red;
+            border: 0.1px solid white;
+            transition: 0.5s;
+        }
+
+        marquee {
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            color: #111;
+        }
+
+        /*.scroll{
+            overflow: scroll;
+        }*/
+
+        /*.figure {
+            width: 125px;
+            height: 125px;
+            border-color: auto solid aqua;
+            border-radius: 50%;
+            overflow: none;
+            background-color: #111;
+        }*/
+
+        img {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        img:hover{
+            
+            transform: rotateZ(45deg);
+            animation: round 1s ease-in 0s infinite;
+        }
+        .collapseall {
+            display: none;
+        }
+        .ul0{
+            list-style: none;
+        }
+        .ul0 .li0:hover .collapseall{
+            display: block;
+            position: absolute;
+            background-color: #000;
+            transition: transform 1.5s ease;
+        }
+        /*@keyframes round{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(180deg);
+                scale: 1.5;
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="ul0">
+                <li class="li0">
+                        <img src="IMAGES/JAIDEEP.bmp" alt="Sample image" />
+                    <div class="collapseall">
+                        <ul class="ul1">
+                            <li class="li1">Home</li>
+                            <li class="li1">Courses
+                                <div class="down1">
+                                    <ul class="ul2">
+                                        <li class="li2">BCA</li>
+                                        <li class="li2">MCA</li>
+                                        <li class="li2">B.Tech
+                                            <div class="down3">
+                                                <ul class="ul3">
+                                                    <li class="li3">1-Year Course</li>
+                                                    <li class="li3">2-Year Course</li>
+                                                    <li class="li3">3-Year Course</li>
+                                                    <li class="li3">4-Year Course</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="li2">M.Tech
+                                            <div class="down3">
+                                                <ul class="ul4">
+                                                    <li class="li4">1-Year Course</li>
+                                                    <li class="li4">2-Year Course</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="li1">About Us</li>
+                            <li class="li1">Contact Us</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="scroll">
+        <marquee>Welcome to my website</marquee>
+    </div>
+    
+</body>
+
+</html>
